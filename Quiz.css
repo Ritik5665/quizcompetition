@@ -1,0 +1,120 @@
+/* made by ritik raj from bca 5b */
+
+/* src/Quiz.css */
+
+/* Set background of entire page */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: cyan;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered quiz container */
+.quiz-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff; /* White quiz box */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Question Section */
+.question-section {
+  margin-bottom: 20px;
+}
+
+.question-count {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.timer {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #d9534f; /* Red color for timer */
+}
+
+.question-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Answers */
+.answer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: #e0e0e0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option:hover {
+  background: #d0d0d0;
+}
+
+/* Answer feedback colors */
+.correct {
+  background-color: #4CAF50 !important; /* Green */
+  color: white;
+}
+
+.incorrect {
+  background-color: #f44336 !important; /* Red */
+  color: white;
+}
+
+/* Control Buttons */
+.controls {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Score Display */
+.score-section {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-top: 40px;
+}
